@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden  
+}
+
+.container {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hoverbox {
+  display: inline;
+  width: calc(100% - 5px);
+}
+
+.enlarge {
+  font-size: 100%;
+  transition: font-size 1s cubic-bezier(0,.75,0,1);
+}
+
+.hoverbox:hover .enlarge {
+  font-size: 120%;
+}
+
+a {
+  text-decoration: none;
+  color: #dedede;
+}
+
+a:visited {
+  color: #808080;
+}
+
+a:hover {
+  color: #bfbfbf;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+@font-face {
+  font-family: 'UniSansHeavy';
+  src: url('common/uni-sans.heavy-caps.otf') format('opentype');
+}
+
+.uniSansHeavy {
+  font-family: 'UniSansHeavy', sans-serif;
+}

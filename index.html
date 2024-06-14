@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>free_ma11oc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script>
+        function copyDiscord() {
+            navigator.clipboard.writeText('free_ma11oc');
+            var element = document.getElementById("discord");
+            element.textContent = "copied";
+            element.style.color = "#808080";
+            setTimeout(function () {
+                element.textContent = "Discord";
+                element.style.color = "#ffffff";
+            }, 1000);
+        }
+    </script>
+    <div class="container">
+        <center style="padding-top: 7.5%;">
+            <div class="hoverbox">
+                <h1>
+                    <p class="enlarge"><a href="https://matrix.to/#/@free_ma11oc:matrix.org"
+                            target="_blank">[matrix]</a></p>
+                </h1>
+            </div>
+        </center>
+
+        <center>
+            <div class="hoverbox">
+                <h1>
+                    <p style="cursor: pointer;" class="enlarge uniSansHeavy" id="discord"
+                        onclick="copyDiscord()">Discord</p>
+                </h1>
+            </div>
+        </center>
+
+
+        <center>
+            <div class="hoverbox">
+                <h1>
+                    <p class="enlarge"><a href="free_ma11oc_public_key.asc"
+                            target="_blank">pgp key</a></p>
+                </h1>
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>
